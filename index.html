@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang= "">
+    <title> Alba Rodriguez</title>
+    <head>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name= "author" content="Alba Rodriguez">
+    <meta name= "keywords" content="Alba Rodriguez, Alba Rodriguez Sanchez, Ingenieria Informatica">
+
+	<script>
+		var myCenter=new google.maps.LatLng(40.408268,-3.873396);
+		var marker;
+		
+		function initialize()
+		{
+		var mapProp = {
+		  disableDefaultUI:true,
+		  scrollwheel: false,
+		  center:myCenter,
+		  zoom:5,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		
+		marker=new google.maps.Marker({
+		  position:myCenter,
+		  animation:google.maps.Animation.BOUNCE
+		  });
+		
+		marker.setMap(map);
+		}
+		
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+<body id="home">
+    <header id= "header">
+   		<div id="nav">
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>   
+                    
+                </ul>
+        </div>
+     </header> 
+     
+    <div class="root">
+    	<div class= "scroll-me"> </div>
+    	<section id="aboutme">
+        	<h2>Hi!</h2>
+            <a href="test.html"><img class="me" src="images/me.jpg"></a>
+    	</section>
+    
+    	<section id="hey">
+        	<h2> Something
+            <br>
+            another...
+        	</h2>
+ 		</section>
+        
+        <div id="hey2">
+        	<div id="googleMap"></div>
+ 		</div>
+    </div>
+    
+   
+    
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: KG; 
+	src: url('fonts/KGBeneathYourBeautiful.ttf');
+}
+@font-face {
+    font-family: Champ; 
+	src: url('fonts/Champagne & Limousines.ttf');
+}
+@font-face {
+    font-family: Smarty; 
+	src: url('fonts/Miss Smarty Pants Skinny.ttf');
+}
